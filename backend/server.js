@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb+srv://triviaadmin:trivia123@cluster0.kfpnwdh.mongodb.net/?appName=Cluster0");
+mongoose.connect("mongodb+srv://triviaadmin:trivia123@cluster0.kfpnwdh.mongodb.net/trivia");
 
 mongoose.connection.on("connected", () => {
   console.log("MongoDB connected");
